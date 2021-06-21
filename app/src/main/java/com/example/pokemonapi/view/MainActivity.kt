@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.fragment)
 
         bottomNavigationView.setupWithNavController(navController)
-        bottomNavigationView.setSelectedItemId(R.id.searchFragment)
+        bottomNavigationView.setSelectedItemId(R.id.allPokFragment)
         bottomNavigationView.setItemIconTintList(null)
 
         val pokemonManager = PokemonManager(this.baseContext)

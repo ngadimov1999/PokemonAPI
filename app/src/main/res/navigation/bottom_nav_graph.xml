@@ -17,4 +17,9 @@
         android:id="@+id/caughtFragment"
         android:name="com.example.pokemonapi.view.CaughtFragment"
         android:label="CaughtFragment" />
+
+    <fragment
+        android:id="@+id/allPokFragment"
+        android:name="com.example.pokemonapi.view.AllPokemon"
+        android:label="CaughtFragment" />
 </navigation>

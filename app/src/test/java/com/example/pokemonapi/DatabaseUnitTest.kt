@@ -30,14 +30,18 @@ class DatabaseUnitTest {
     }
 
     @Test
-    fun insert_anime_isCorrect() {
-        val anime = Pokemon("18507", "Free!", 0, "Haruka Nanase has a love for water and a passion for swimming. In elementary school, he competed in and won a relay race with his three friends Rin Matsuoka, Nagisa Hazuki, and Makoto Tachibana. After...",
-                            "7.36", "https:\\/\\/cdn.myanimelist.net\\/images\\/anime\\/6\\/51107.jpg?s=277f33627dad8f3f349c2ac234138ca6")
+    fun insert_pokemon_isCorrect() {
+        val anime = Pokemon(
+            "bulbasaur",
+            1,
+            "0",
+            "https:\\/\\/raw.githubusercontent.com\\/PokeAPI\\/sprites\\/master\\/sprites\\/pokemon\\/1.png"
+        )
         GlobalScope.launch(Dispatchers.IO) {
             pokemonDao.insert(anime)
-            val added_anime = pokemonDao.getAnimeByMalId("18507")
-            pokemonDao.deleteAnimeById(added_anime.id)
-            assertEquals(anime.name, added_anime.title)
+            val added_pok = pokemonDao.getPokemonById(1)
+            pokemonDao.deletePokemonById(added_pok.id)
+            assertEquals(anime.name, added_pok.name)
         }
     }
 }
