@@ -47,8 +47,7 @@
             android:id="@+id/synopsis"
             android:layout_width="380dp"
             android:layout_height="303dp"
-            android:background="#19000000"
-            android:gravity="center"
+            android:padding="25dip"
             android:text="Описание"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -57,9 +56,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.934"
-
-
-            />
+            android:background="@drawable/share_rounded_corner_with_border"/>
 
         <ImageView
             android:id="@+id/pokemon_image"
