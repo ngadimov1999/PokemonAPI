@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/purple_500"
+            android:background="@color/pokemon_yellow"
             app:popupTheme="@style/Theme.PokemonAPI.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -31,8 +31,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@color/purple_500"
-        app:itemBackground="@color/purple_500"
+        android:background="@color/pokemon_yellow"
+        app:itemBackground="@color/pokemon_yellow"
         app:itemIconSize="35dp"
         app:itemTextColor="@color/white"
         app:labelVisibilityMode="labeled"
@@ -42,7 +42,7 @@
         android:id="@+id/fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="622dp"
+        android:layout_height="910dp"
         app:defaultNavHost="true"
         app:layout_anchor="@+id/include"
         app:layout_anchorGravity="center"

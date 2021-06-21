@@ -21,12 +21,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="80dp"
-                android:icon="@drawable/heart_card"
+                android:icon="@drawable/gotcha"
                 android:text=""
-                app:icon="@drawable/heart_card"
+                app:icon="@drawable/gotcha"
                 app:iconGravity="start"
                 app:iconSize="40dp"
-                app:iconTint="@color/black" />
+                app:iconTint="@null" />
 
             <ImageView
                 android:id="@+id/image_view"
@@ -46,9 +46,10 @@
 
                 <TextView
                     android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="cursive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="bald"
+                    android:gravity="center"
                     android:text="title"
                     android:textAppearance="?attr/textAppearanceHeadline6"
                     android:textSize="18sp" />

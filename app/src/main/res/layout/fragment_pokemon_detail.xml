@@ -13,12 +13,11 @@
             style="?attr/borderlessButtonStyle"
             android:layout_width="48dp"
             android:layout_height="45dp"
-            android:textColor="@color/black"
             app:backgroundTint="@color/white"
-            app:icon="@drawable/heart_card"
+            app:icon="@drawable/gotcha"
             app:iconGravity="textStart"
             app:iconSize="25dp"
-            app:iconTint="@color/black"
+            app:iconTint="@null"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.955"
@@ -31,30 +30,39 @@
             android:id="@+id/pokemon_title"
             android:layout_width="350dp"
             android:layout_height="69dp"
-            android:fontFamily="cursive"
+            android:fontFamily="bald"
+            android:gravity="center"
             android:text="название"
-            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.423"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.483" />
+            app:layout_constraintVertical_bias="0.481" />
 
         <TextView
             android:id="@+id/synopsis"
-            android:layout_width="350dp"
+            android:layout_width="380dp"
             android:layout_height="303dp"
             android:background="#19000000"
+            android:gravity="center"
             android:text="Описание"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.371"
+            app:layout_constraintHorizontal_bias="0.516"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.935" />
+            app:layout_constraintVertical_bias="0.934"
+
+
+
+
+
+            />
 
         <ImageView
             android:id="@+id/pokemon_image"
